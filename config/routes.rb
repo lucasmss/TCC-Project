@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root            to: 'static_pages#index'
   get 'sobre',    to: 'static_pages#sobre'
   get 'contato',  to: 'static_pages#contato'
+  get 'teste',    to: 'static_pages#teste'
 
   get 'cadastro', to: 'users#new'
   get 'entrar',   to: 'sessions#new'
