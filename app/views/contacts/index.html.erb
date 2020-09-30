@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-xs-12 text-center">
-    <h1>Meus Contatos</h1>
+    <h1>Meus Clientes</h1>
   </div>
 
   <div class="col-md-8 col-md-offset-2 col-xs-12">
@@ -9,9 +9,13 @@
         <tr>
           <th>Nome</th>
           <th>Telefone</th>
+          <th>Pedido</th>
+          <th>Endereço</th>
+          <th>Preço</th>
+          <th>Pagamento</th>
           <th colspan="2">
             Ações
-            <%= link_to 'Novo Contato', new_user_contact_path(current_user), class: 'btn btn-success' %>
+            <%= link_to 'Novo Cliente', new_user_contact_path(current_user), class: 'btn btn-success' %>
           </th>
         </tr>
       </thead>
@@ -31,6 +35,18 @@
           </td>
           <td>
             <%= c.phone %>
+          </td>
+           <td>
+            <%= c.requests %>
+          </td>
+           <td>
+            <%= c.Address %>
+          </td>
+           <td>
+            <%= c.price %>
+          </td>
+           <td>
+            <%= c.payment %>
           </td>
           <td>
             <%= link_to 'Editar', edit_user_contact_path(current_user, c), class: 'btn btn-warning' %>
