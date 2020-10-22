@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   get 'cadastro', to: 'users#new'
   get 'entrar',   to: 'sessions#new'
+  get 'entrarComer', to: 'sessions#newComer'
   post 'entrar',  to: 'sessions#create'
   delete 'sair',  to: 'sessions#destroy'
 
